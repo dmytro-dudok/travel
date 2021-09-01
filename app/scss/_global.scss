@@ -1,0 +1,83 @@
+html {
+	scroll-behavior: smooth;
+	box-sizing: border-box;
+}
+*,
+::before,
+::after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color: #5e6282;
+	background: #ffffff;
+	@extend %poppins-medium;
+	font-size: 16px;
+	line-height: 26px;
+	text-align: center;
+}
+
+.container {
+	max-width: 1230px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.title {
+	@extend %volkhov-bold;
+    font-size: 50px;
+	line-height: 64px;
+	text-align: center;
+	text-transform: capitalize;
+	color: #14183e;
+}
+.page-section {
+	// position: relative;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+	margin: 0;
+	font-size: inherit;
+}
+
+ul[class] {
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}

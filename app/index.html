@@ -1,31 +1,693 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Travel</title>
-  <link rel="stylesheet" href="css/style.min.css">
-</head>
-<body>
-  <header class="header">
-    <div class="container">
-      <div class="header__inner">
-        <img class="logo" src="./images/logo.svg" alt="logo">
-        <nav class="menu">
-          <ul class="menu__list">
-            <li class="menu__list-item"><a href="#" class="menu__list-link">Desitnations</a></li>
-            <li class="menu__list-item"><a href="#" class="menu__list-link">Hotels</a></li>
-            <li class="menu__list-item"><a href="#" class="menu__list-link">Flights</a></li>
-            <li class="menu__list-item"><a href="#" class="menu__list-link">Bookings</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="js/libs.min.js"></script>
-  <script src="js/main.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="/site.webmanifest" />
+		<title>Travel</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+			integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="css/style.min.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__inner">
+					<a href="#" class="logo"
+						><img
+							class="logo__img"
+							src="./images/logo.svg"
+							alt="logo"
+					/></a>
+					<nav class="menu">
+						<ul class="menu__list">
+							<li class="menu__list-item">
+								<a href="#" class="menu__list-link"
+									>Destinations</a
+								>
+							</li>
+							<li class="menu__list-item">
+								<a href="#" class="menu__list-link">Hotels</a>
+							</li>
+							<li class="menu__list-item">
+								<a href="#" class="menu__list-link">Flights</a>
+							</li>
+							<li class="menu__list-item">
+								<a href="#" class="menu__list-link">Bookings</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="header__info">
+						<a class="header__login" href="#">Login</a
+						><a class="header__signup" href="#">Sign up</a>
+					</div>
+					<div class="language-picker">
+						<form action="#" class="language-picker__form">
+							<select
+								name="language-picker-select"
+								id="language-picker-select"
+							>
+								<option lang="en" value="english" selected>
+									EN
+								</option>
+								<option lang="de" value="deutsch">DE</option>
+								<option lang="fr" value="francais">FR</option>
+								<option lang="it" value="italiano">IT</option>
+							</select>
+						</form>
+					</div>
+				</div>
+				<div class="header-top">
+					<div class="header-top__inner">
+						<div class="header-top__suptext">
+							Best Destinations around the world
+						</div>
+						<h1 class="header-top__title">
+							Travel, enjoy and live a new and full life
+						</h1>
+						<div class="header-top__text">
+							Built Wicket longer admire do barton vanity itself
+							do in it. Preferred to sportsmen it engrossed
+							listening. Park gate sell they west hard for the.
+						</div>
+						<div class="header-top__info">
+							<a href="#" class="header-top__link"
+								>Find out more</a
+							>
+							<button class="header-top__play-btn">
+								Play Demo
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- SERVICES -->
+		<section class="services">
+			<div class="container">
+				<div class="services__inner">
+					<h5 class="services__suptext">CATEGORY</h5>
+					<h3 class="title services__title">
+						We Offer Best Services
+					</h3>
+					<div class="services__items">
+						<div class="services__item">
+							<div class="services__item-box">
+								<div class="services__image-container">
+									<img
+										class="services__item-image"
+										src="./images/services-icon-1.svg"
+										alt="services-icon"
+									/>
+								</div>
+
+								<h4 class="services__item-title">
+									Calculated Weather
+								</h4>
+								<p class="services__item-text">
+									Built Wicket longer admire do barton vanity
+									itself do in it.
+								</p>
+							</div>
+						</div>
+						<div class="services__item">
+							<div class="services__item-box">
+								<div class="services__image-container">
+									<img
+										class="services__item-image"
+										src="./images/services-icon-2.svg"
+										alt="services-icon"
+									/>
+								</div>
+								<h4 class="services__item-title">
+									Best Flights
+								</h4>
+								<p class="services__item-text">
+									Engrossed listening. Park gate sell they
+									west hard for the.
+								</p>
+							</div>
+						</div>
+						<div class="services__item">
+							<div class="services__item-box">
+								<div class="services__image-container">
+									<img
+										class="services__item-image"
+										src="./images/services-icon-3.png"
+										alt="services-icon"
+									/>
+								</div>
+								<h4 class="services__item-title">
+									Local Events
+								</h4>
+								<p class="services__item-text">
+									Barton vanity itself do in it. Preferd to
+									men it engrossed listening.
+								</p>
+							</div>
+						</div>
+						<div class="services__item">
+							<div class="services__item-box">
+								<div class="services__image-container">
+									<img
+										class="services__item-image"
+										src="./images/services-icon-4.svg"
+										alt="services-icon"
+									/>
+								</div>
+								<h4 class="services__item-title">
+									Customization
+								</h4>
+								<p class="services__item-text">
+									We deliver outsourced aviation services for
+									military customers
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- DESTINATIONS -->
+		<section class="destinations">
+			<div class="container">
+				<div class="destinations__inner">
+					<h5 class="destinations__suptext">Top Selling</h5>
+					<h3 class="title destinations__title">Top Destinations</h3>
+					<div class="destinations__slider">
+						<div class="destinations__slider-item">
+							<div class="destinations__item-image">
+								<img src="./images/rome.jpg" alt="rome" />
+							</div>
+							<div class="destinations__slider-content">
+								<h6 class="destinations__slider-title">
+									<span>Rome, Italy</span>
+									<span>$5,42k</span>
+								</h6>
+								<p class="destinations__slider-text">
+									10 Days Trip
+								</p>
+							</div>
+						</div>
+						<div class="destinations__slider-item">
+							<div class="destinations__item-image">
+								<img src="./images/london.jpg" alt="rome" />
+							</div>
+							<div class="destinations__slider-content">
+								<h6 class="destinations__slider-title">
+									<span>London, UK</span>
+									<span>$4.2k</span>
+								</h6>
+								<p class="destinations__slider-text">
+									12 Days Trip
+								</p>
+							</div>
+						</div>
+						<div class="destinations__slider-item">
+							<div class="destinations__item-image">
+								<img src="./images/europe.jpg" alt="rome" />
+							</div>
+							<div class="destinations__slider-content">
+								<h6 class="destinations__slider-title">
+									<span>Full Europe</span>
+									<span>$15k</span>
+								</h6>
+								<p class="destinations__slider-text">
+									28 Days Trip
+								</p>
+							</div>
+						</div>
+						<div class="destinations__slider-item">
+							<div class="destinations__item-image">
+								<img src="./images/rome.jpg" alt="rome" />
+							</div>
+							<div class="destinations__slider-content">
+								<h6 class="destinations__slider-title">
+									<span>Rome, Italy</span>
+									<span>$5,42k</span>
+								</h6>
+								<p class="destinations__slider-text">
+									10 Days Trip
+								</p>
+							</div>
+						</div>
+						<div class="destinations__slider-item">
+							<div class="destinations__item-image">
+								<img src="./images/london.jpg" alt="rome" />
+							</div>
+							<div class="destinations__slider-content">
+								<h6 class="destinations__slider-title">
+									<span>London, UK</span>
+									<span>$4.2k</span>
+								</h6>
+								<p class="destinations__slider-text">
+									12 Days Trip
+								</p>
+							</div>
+						</div>
+						<div class="destinations__slider-item">
+							<div class="destinations__item-image">
+								<img src="./images/europe.jpg" alt="rome" />
+							</div>
+							<div class="destinations__slider-content">
+								<h6 class="destinations__slider-title">
+									<span>Full Europe</span>
+									<span>$15k</span>
+								</h6>
+								<p class="destinations__slider-text">
+									28 Days Trip
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- BOOKING -->
+		<div class="booking">
+			<div class="container">
+				<div class="booking__inner">
+					<div class="booking__inner-left">
+						<h5 class="booking__suptext">Easy and Fast</h5>
+						<h3 class="booking__title title">
+							Book your next trip in 3 easy steps
+						</h3>
+						<ul class="booking__list">
+							<li class="booking__list-item">
+								<h6 class="booking__item-title">
+									Choose Destination
+								</h6>
+								<p class="booking__item-text">
+									Lorem ipsum dolor sit amet, consectetur
+									adipiscing elit. Urna, tortor tempus.
+								</p>
+							</li>
+							<li class="booking__list-item">
+								<h6 class="booking__item-title">
+									Make Payment
+								</h6>
+								<p class="booking__item-text">
+									Lorem ipsum dolor sit amet, consectetur
+									adipiscing elit. Urna, tortor tempus.
+								</p>
+							</li>
+							<li class="booking__list-item">
+								<h6 class="booking__item-title">
+									Reach Airport on Selected Date
+								</h6>
+								<p class="booking__item-text">
+									Lorem ipsum dolor sit amet, consectetur
+									adipiscing elit. Urna, tortor tempus.
+								</p>
+							</li>
+						</ul>
+					</div>
+					<div class="booking__inner-right">
+						<div class="booking__inner-content">
+							<div class="booking__outer-content">
+								<div class="booking__outer-suptext">
+									Ongoing
+								</div>
+								<h6 class="booking__outer-title">
+									Trip to rome
+								</h6>
+								<p class="booking__outer-text">
+									<span>40%</span> completed
+								</p>
+								<img
+									class="booking__outer-img"
+									src="./images/line.svg"
+									alt=""
+								/>
+							</div>
+							<img
+								class="booking__image"
+								src="./images/booking-image.jpg"
+								alt="greece"
+							/>
+							<h6 class="booking__content-title">
+								Trip To Greece
+							</h6>
+							<p class="booking__content-text">
+								<span>14-29 June |</span>
+								<span>by Robbin joseph</span>
+							</p>
+							<div class="booking__icon-container">
+								<a class="booking__link" href="#">
+									<img
+										src="./images/leaf-icon.svg"
+										alt="leaf"
+									/>
+								</a>
+								<a class="booking__link" href="#">
+									<img
+										src="./images/map-icon.svg"
+										alt="map"
+									/>
+								</a>
+								<a class="booking__link" href="#">
+									<img
+										src="./images/send-icon.svg"
+										alt="send"
+									/>
+								</a>
+							</div>
+							<div class="booking__text-bottom">
+								<p
+									class="
+										booking__content-text
+										booking__content-text-2
+									"
+								>
+									<span>24</span> people going
+								</p>
+								<button class="booking__like-btn">
+									<img
+										class="booking__heart"
+										src="./images/heart.svg"
+										alt=""
+									/>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- REVIEWS -->
+		<section class="reviews">
+			<div class="container">
+				<div class="reviews__inner">
+					<div class="reviews__content">
+						<h5 class="reviews__text-above">Testimonials</h5>
+						<h3 class="reviews__title title">
+							What people say about Us.
+						</h3>
+
+						<div class="reviews__dots-container">
+							<button class="reviews__dot"></button>
+							<button class="reviews__dot"></button>
+							<button class="reviews__dot"></button>
+						</div>
+					</div>
+					<div class="reviews__slider">
+						<div class="reviews__slider-item">
+							<p class="reviews__item-text">
+								“On the Windows talking painted pasture yet its
+								express parties use. Sure last upon he same as
+								knew next. Of believed or diverted no.”
+							</p>
+							<h6 class="reviews__item-title">Mike Taylor</h6>
+							<p class="reviews__item-subtext">
+								Lahore, Pakistan
+							</p>
+						</div>
+						<div class="reviews__slider-item">
+							<p class="reviews__item-text">
+								“On the Windows talking painted pasture yet its
+								express parties use. Sure last upon he same as
+								knew next. Of believed or diverted no.”
+							</p>
+							<h6 class="reviews__item-title">Susan Smith</h6>
+							<p class="reviews__item-subtext">
+								CEO of Red Button
+							</p>
+						</div>
+						<div class="reviews__slider-item">
+							<p class="reviews__item-text">
+								“On the Windows talking painted pasture yet its
+								express parties use. Sure last upon he same as
+								knew next. Of believed or diverted no.”
+							</p>
+							<h6 class="reviews__item-title">Anna Johnson</h6>
+							<p class="reviews__item-subtext">
+								Red Button, Pakistan
+							</p>
+						</div>
+						<div class="reviews__slider-item">
+							<p class="reviews__item-text">
+								“On the Windows talking painted pasture yet its
+								express parties use. Sure last upon he same as
+								knew next. Of believed or diverted no.”
+							</p>
+							<h6 class="reviews__item-title">Ben Johnson</h6>
+							<p class="reviews__item-subtext">
+								Red Button, Pakistan
+							</p>
+						</div>
+					</div>
+					<div class="reviews__btn-container">
+						<button class="slider-btn prev-btn">
+							<svg
+								width="16"
+								height="10"
+								viewBox="0 0 16 10"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M0.292893 7.79289C-0.0976311 8.18342 -0.0976311 8.81658 0.292893 9.20711C0.683417 9.59763 1.31658 9.59763 1.70711 9.20711L0.292893 7.79289ZM8 1.5L8.70711 0.792893L8 0.0857865L7.29289 0.792893L8 1.5ZM14.2929 9.20711C14.6834 9.59763 15.3166 9.59763 15.7071 9.20711C16.0976 8.81658 16.0976 8.18342 15.7071 7.79289L14.2929 9.20711ZM1.70711 9.20711L8.70711 2.20711L7.29289 0.792893L0.292893 7.79289L1.70711 9.20711ZM7.29289 2.20711L14.2929 9.20711L15.7071 7.79289L8.70711 0.792893L7.29289 2.20711Z"
+									fill="#BCB7C2"
+								/>
+							</svg>
+						</button>
+						<button class="slider-btn next-btn">
+							<svg
+								width="16"
+								height="10"
+								viewBox="0 0 16 10"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893C0.683417 -0.0976315 1.31658 -0.0976315 1.70711 0.292893L0.292893 1.70711ZM8 8L8.70711 8.70711L8 9.41421L7.29289 8.70711L8 8ZM14.2929 0.292893C14.6834 -0.0976315 15.3166 -0.0976315 15.7071 0.292893C16.0976 0.683417 16.0976 1.31658 15.7071 1.70711L14.2929 0.292893ZM1.70711 0.292893L8.70711 7.29289L7.29289 8.70711L0.292893 1.70711L1.70711 0.292893ZM7.29289 7.29289L14.2929 0.292893L15.7071 1.70711L8.70711 8.70711L7.29289 7.29289Z"
+									fill="#BCB7C2"
+								/>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- LOGOS -->
+		<section class="logos">
+			<div class="container">
+				<div class="logos__inner">
+					<div class="logos__image-container">
+						<img
+							class="logos__images"
+							src="images//logos__image-1.png"
+							alt=""
+						/>
+					</div>
+					<div class="logos__image-container">
+						<img
+							class="logos__images"
+							src="images/logos__image-2.png"
+							alt=""
+						/>
+					</div>
+					<div class="logos__image-container">
+						<img
+							class="logos__images"
+							src="images/logos__image-3.png"
+							alt=""
+						/>
+					</div>
+					<div class="logos__image-container">
+						<img
+							class="logos__images"
+							src="images/logos__image-4.png"
+							alt=""
+						/>
+					</div>
+					<div class="logos__image-container">
+						<img
+							class="logos__images"
+							src="images/logos__image-5.png"
+							alt=""
+						/>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- SUBSCRIBE -->
+		<section class="subscription">
+			<div class="container">
+				<div class="subscription__inner">
+					<h4 class="subscription__title">
+						Subscribe to get information, latest news and other
+						interesting offers about Cobham
+					</h4>
+					<form class="subscription__form" action="#">
+						<input
+							class="subscription__form-input"
+							onchange="handleChange()"
+							type="email"
+							placeholder="Your email"
+						/>
+						<button class="subscription__form-btn" type="submit">
+							Subscribe
+						</button>
+					</form>
+				</div>
+			</div>
+		</section>
+		<!-- FOOTER -->
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__inner">
+					<div class="footer__desc">
+						<h4 class="footer__desc-title">
+							<a href="#">Jadoo.</a>
+						</h4>
+						<p class="footer__desc-text">
+							Book your trip in minute, get full Control for much
+							longer.
+						</p>
+					</div>
+					<div class="footer__info">
+						<div class="footer__info-item">
+							<h5 class="footer__info-title">Company</h5>
+							<ul class="footer__info-menu">
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link"
+										>About</a
+									>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link"
+										>Careers</a
+									>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link"
+										>Mobile</a
+									>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__info-item">
+							<h5 class="footer__info-title">Contact</h5>
+							<ul class="footer__info-menu">
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link"
+										>Help/FAQ</a
+									>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link"
+										>Press</a
+									>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link"
+										>Affilates</a
+									>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__info-item">
+							<h5 class="footer__info-title">More</h5>
+							<ul class="footer__info-menu">
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link"
+										>Airlinefees</a
+									>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link"
+										>Airline</a
+									>
+								</li>
+								<li class="footer__menu-item">
+									<a href="#" class="footer__menu-link"
+										>Low fare tips</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="footer__socials">
+						<div class="footer__social-icons">
+							<a href="#"><img
+								class="footer__social-img"
+								src="./images/facebook-icon.svg"
+								alt="social-icon"
+							/></a>
+							<a href="#"><img
+								class="footer__social-img"
+								src="./images/instagram-icon.png"
+								alt="social-icon"
+							/></a>
+							<a href="#"><img
+								class="footer__social-img"
+								src="./images/twitter-icon.svg"
+								alt="social-icon"
+							/></a>
+						</div>
+						<h5 class="footer__socials-title">Discover our app</h5>
+						<div class="footer__store-links">
+							<a href="#"
+								><img
+									src="./images/google-play.svg"
+									alt="google play" /></a
+							><a href="#"
+								><img src="./images/google-play.svg" alt="apple store"
+							/></a>
+						</div>
+					</div>
+				</div>
+				<p class="footer__copy">All rights reserved@jadoo.co</p>
+				<p class="footer__design-author">
+					<a
+						href="https://www.arshakir.com/?ref=uistore.design"
+						>Author: AR Shakir</a
+					>
+				</p>
+			</div>
+		</footer>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="js/main.min.js"></script>
+		<!-- <script src="js/main.js"></script> -->
+		<script>
+			function handleChange() {
+				const input = document.querySelector(
+					'.subscription__form-input'
+				)
+				if (input.value) {
+					input.style.background = '#ffffff'
+					input.style.backgroundImage = 'none'
+				} else {
+					input.style.background =
+						"#ffffff url('../images/envelope.svg') no-repeat top 25px left 31px"
+				}
+			}
+		</script>
+	</body>
 </html>

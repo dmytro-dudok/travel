@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Volkhov:wght@700&display=swap');
+// font-family: 'Volkhov', serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+// font-family: 'Poppins', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+// font-family: 'Open Sans', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+// font-family: 'Montserrat', sans-serif;
+
+@font-face {
+	font-family: 'Google Sans';
+	src: url('../fonts/GoogleSans-Regular.woff2') format('woff2'),
+		url('../fonts/GoogleSans-Regular.woff') format('woff');
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face{
+    font-family: 'Google Sans Medium';
+    src: url('../fonts/GoogleSans-Medium.woff2') format('woff2'),
+    url('../fonts/GoogleSans-Medium.woff') format('woff');
+}

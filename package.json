@@ -1,25 +1,34 @@
 {
-  "name": "gulp-start",
+  "name": "travel",
   "version": "1.0.0",
-  "description": "start gulp",
+  "description": "Travel Agency Landing Page UI",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Vadim Prokopchuk",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmytro-dudok/travel.git"
+  },
+  "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmytro-dudok/travel/issues"
+  },
+  "homepage": "https://github.com/dmytro-dudok/travel#readme",
   "devDependencies": {
-    "browser-sync": "^2.26.5",
-    "del": "^5.0.0",
+    "browser-sync": "^2.27.5",
+    "del": "^6.0.0",
     "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^6.1.0",
+    "gulp-autoprefixer": "^8.0.0",
     "gulp-concat": "^2.6.1",
-    "gulp-rename": "^1.4.0",
-    "gulp-sass": "^4.0.2",
-    "gulp-uglify": "^3.0.2",
-    "normalize.css": "^8.0.1"
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-uglify-es": "^3.0.0",
+    "sass": "^1.37.5"
   },
   "dependencies": {
+    "jquery": "^3.6.0",
     "slick-carousel": "^1.8.1"
   }
 }
