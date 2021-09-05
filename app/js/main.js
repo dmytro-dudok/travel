@@ -75,9 +75,10 @@ let displayDots = () => {
 
 nextBtn.addEventListener('click', () => {
 	current++
-	next = getCurrent()
+	next = getNext()
 	carousel()
 	prev = current
+	console.log('prev');
 })
 
 prevBtn.addEventListener('click', () => {

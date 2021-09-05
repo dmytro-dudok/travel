@@ -673,7 +673,18 @@
 		</footer>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="js/main.min.js"></script>
+		<script src="https://unpkg.com/magic-grid/dist/magic-grid.min.js"></script>
+		<!-- <script src="js/main.min.js"></script> -->
+		<script src="js/main.js"></script>
+		<script>
+			let magicGrid = new MagicGrid({
+  container: ".container", // Required. Can be a class, id, or an HTMLElement.
+  static: true, // Required for static content.
+  animate: true, // Optional.
+});
+ 
+magicGrid.listen();
+		</script>
 		<!-- <script src="js/main.js"></script> -->
 		<script>
 			function handleChange() {
